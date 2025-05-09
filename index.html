@@ -15,89 +15,6 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
-<style>
-/* Base Styles */
-.hero {
-  width: 100%;
-  position: relative;
-}
-
-.home-slider {
-  width: 100%;
-}
-
-.slider-item {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.slide-content {
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  flex-wrap: wrap;
-}
-
-.text-content {
-  flex: 1 1 50%;
-  padding: 2rem;
-  min-width: 300px;
-}
-
-.image-content {
-  flex: 1 1 50%;
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  min-width: 300px;
-}
-
-.buttons {
-  margin-top: 2rem;
-}
-
-.buttons .btn {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .slider-item {
-    min-height: auto;
-    height: auto;
-    padding: 4rem 0;
-  }
-  
-  .slide-content {
-    flex-direction: column-reverse;
-  }
-  
-  .image-content {
-    min-height: 300px;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  
-  .text-content {
-    width: 100%;
-  }
-  
-  .buttons .btn {
-    width: 100%;
-    margin-right: 0;
-  }
-  
-  .buttons .btn + .btn {
-    margin-top: 1rem;
-  }
-}
-</style>
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -125,55 +42,36 @@
 	</nav>
 	<!-- start new code -->
 <!-- Home Section -->
-<section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
-    
-    <!-- Slide 1 -->
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-md-6 order-md-1 order-2">
-            <div class="hero-content">
+<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="home-section">
+  <div class="container">
+    <div class="row d-flex no-gutters">
+      <div class="col-md-6 col-lg-5 d-flex">
+        <div class="img-about img d-flex align-items-stretch">
+          <div class="overlay"></div>
+          <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/6.jpg);" aria-label="About image"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+        <div class="py-md-5">
+          <div class="row justify-content-start pb-3">
+		  <div class="text">
               <span class="subheading">Hello! This is Meaza</span>
-              <h1>Creative <span>Graphic</span> Designer</h1>
-              <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Hire me</a>
-                <a href="#" class="btn btn-outline-primary">Download CV</a>
-              </div>
+              <h1 class="mb-4 mt-3">Creative <span>Graphic</span> Designer</h1>
+              <p>
+                <a href="https://drive.google.com/file/d/1qMzhWAEd4mSFoMAcw0NJ8eG4-NcW41tH/view?usp=drive_link" class="btn btn-primary">Hire me</a>
+                <a href="https://drive.google.com/file/d/1qMzhWAEd4mSFoMAcw0NJ8eG4-NcW41tH/view?usp=drive_link" class="btn btn-primary btn-outline-primary">Download CV</a>
+              </p>
             </div>
-          </div>
-          <div class="col-lg-5 col-md-6 order-md-2 order-1">
-            <div class="hero-image" style="background-image: url('images/1.jpg');"></div>
+
+           
+
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Slide 2 -->
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-md-6">
-            <div class="hero-content">
-              <span class="subheading">We Design & Build Brands</span>
-              <h1>Hi, I am <span>Meaza</span>. This is my favorite <span>work.</span></h1>
-              <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Hire me</a>
-                <a href="#" class="btn btn-outline-primary">Download CV</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6">
-            <div class="hero-image" style="background-image: url('images/56.jpg');"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
+<!-- End Home Section -->
 
 <!-- About Section -->
 <section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
