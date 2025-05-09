@@ -15,6 +15,38 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+<style>
+/* Base styles */
+#home-section {
+  position: relative;
+  width: 100%;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  #home-section {
+    height: auto !important;
+    min-height: 100vh;
+    overflow-y: visible !important;
+  }
+  
+  .home-slider, 
+  .slider-item, 
+  .owl-carousel, 
+  .owl-stage-outer, 
+  .owl-stage, 
+  .owl-item {
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+  }
+  
+  .slider-text {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+</style>
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -44,7 +76,7 @@
 <!-- Home Section -->
 <section id="home-section" class="hero">
   <div class="home-slider owl-carousel">
-
+    
     <!-- Slide 1 -->
     <div class="slider-item">
       <div class="overlay"></div>
